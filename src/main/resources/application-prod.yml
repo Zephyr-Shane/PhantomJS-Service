@@ -1,0 +1,32 @@
+server:
+  port: 9527
+
+spring:
+  web:
+    resources:
+      add-mappings: false
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      read-date-timestamps-as-nanoseconds: false
+    time-zone: GMT+8
+
+myapp:
+  # oss bucket name
+  bucketNameForReport: "bucketName"
+  ossPdfPath: "pdf/report/"
+  outputPath: "/app/data/temp/img/"
+  outputPdfPath: "/app/data/temp/pdf/"
+  optionTempTxtPath: "/app/data/temp/txt/"
+  phantomjsPath: "/app/data/phantomjs/bin/phantomjs"
+  scriptPath: "/app/data/echarts-convert/echarts-convert.js"
+
+
+
+
+

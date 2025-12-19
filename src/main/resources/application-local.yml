@@ -1,0 +1,16 @@
+server:
+  port: 8801
+
+myapp:
+  bucketNameForReport: "bucketName"
+  ossPdfPath: "pdf/report/"
+  outputPath: "D:\\temp\\img\\"
+  outputPdfPath: "D:\\temp\\pdf\\"
+  optionTempTxtPath: "D:\\temp\\txt\\"
+  phantomjsPath: "D:\\env\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe"
+  scriptPath: "C:\\Users\\Administrator\\Desktop\\phantomjs\\echarts-convert\\echarts-convert.js"
+
+
+
+
+
