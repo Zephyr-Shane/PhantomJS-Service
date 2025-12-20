@@ -1,0 +1,117 @@
+var option = {
+  legend: {
+    data: ['试题难度', '个人']
+  },
+  radar: {
+     shape: 'circle', //设置雷达图形状，值有circle、square,默认为方形
+     splitNumber: 5, // 雷达图圈数设置
+    indicator: [{ name: '正负数的意义', max: 1 },
+      { name: '中心对称图形', max: 1 },
+      { name: '同底数幂的除法', max: 1 },
+      { name: '合并同类项', max: 1 },
+      { name: '同底数幂的乘法', max: 1 },
+      { name: '幂的乘方与积的乘方', max: 1 },
+      { name: '正负数的意义', max: 1 },
+      { name: '中心对称图形', max: 1 },
+      { name: '同底数幂的除法', max: 1 },
+      { name: '合并同类项', max: 1 },
+      { name: '同底数幂的乘法', max: 1 },
+      { name: '幂的乘方与积的乘方', max: 1 },
+      { name: '正负数的意义', max: 1 },
+      { name: '中心对称图形', max: 1 },
+      { name: '同底数幂的除法', max: 1 },
+      { name: '合并同类项', max: 1 },
+      { name: '同底数幂的乘法', max: 1 },
+      { name: '幂的乘方与积的乘方', max: 1 },
+      { name: '正负数的意义', max: 1 },
+      { name: '中心对称图形', max: 1 },
+      { name: '同底数幂的除法', max: 1 },
+      { name: '合并同类项', max: 1 },
+      { name: '同底数幂的乘法', max: 1 },
+      { name: '幂的乘方与积的乘方', max: 1 },
+      { name: '正负数的意义', max: 1 },
+      { name: '中心对称图形', max: 1 },
+      { name: '同底数幂的除法', max: 1 },
+      { name: '合并同类项', max: 1 },
+      { name: '同底数幂的乘法', max: 1 },
+      { name: '幂的乘方与积的乘方', max: 1 },
+      { name: '正负数的意义', max: 1 },
+      { name: '中心对称图形', max: 1 },
+      { name: '同底数幂的除法', max: 1 },
+      { name: '合并同类项', max: 1 },
+      { name: '同底数幂的乘法', max: 1 },
+      { name: '幂的乘方与积的乘方', max: 1 },
+      { name: '正负数的意义', max: 1 },
+      { name: '中心对称图形', max: 1 },
+      { name: '同底数幂的除法', max: 1 },
+      { name: '合并同类项', max: 1 },
+      { name: '同底数幂的乘法', max: 1 },
+      { name: '幂的乘方与积的乘方', max: 1 },
+      ],
+ 
+              
+              splitLine : { //网格颜色设置
+                  show : true,
+                  lineStyle : {
+                      width : 1,
+                      color : '#999',
+                  },
+              },
+              name:{ //修改indicator文字的颜色
+                  textStyle:{
+                      color:"#4f4f4f"
+                  }
+              }
+  },
+  series: [
+    {
+      name: '知识点掌握',
+      type: 'radar',
+      symbol: 'circle', // 单个数值点的样式，还可以取值'rect','angle'等
+      symbolSize: 6, // 数值点的大小
+      data: [
+        {
+          value: [0.3,0.4,0.6,0.6,0.6,0.6,0.3,0.45,0.4,0.5,0.5,0.4,0.4,0.4,0.6,0.6,0.6,0.6,0.4,0.4,0.4,0.6,0.6,0.6,0.4,0.4,0.4,0.6,0.6,0.6,0.6,0.6,0.7,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5],
+          name: '试题难度',
+          itemStyle: { //该数值区域样式设置
+                            normal: {
+                                color: '#5470c6' //背景颜色，还需设置areaStyle
+                            },
+                        },
+                         label: {  //显示value中具体的数值
+                            normal: {
+                                show: true,
+                                textStyle:{  //更改数值样式
+                                    color:'#4f4f4f'
+                                }
+                            },
+                        },  
+                         areaStyle: { //设置区域背景颜色透明度
+                            normal: {
+                                width: 1,
+                                opacity: 0.3,
+                            },
+                        },        
+                       
+        },
+        {
+          value: [1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+          name: '个人',
+          itemStyle: { //该数值区域样式设置
+                            normal: {
+                                color: '#96ce7b' //背景颜色，还需设置areaStyle
+                            },
+                        },  
+                         areaStyle: { //设置区域背景颜色透明度
+                            normal: {
+                                width: 1,
+                                opacity: 0.3,
+                            },
+                        },       
+                    
+        }
+      ]
+
+    }
+  ]
+};

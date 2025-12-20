@@ -1,0 +1,88 @@
+var option = {
+legend: {
+data: [
+    "样本", 
+    "个人"
+]
+},
+grid: {
+left: '5%',
+right: '5%',
+bottom: '5%',
+containLabel: true
+},
+radar: {
+shape: 'circle',
+splitNumber: 5,
+indicator: [
+    { name: "有限数集间的混合运算", max: 1 }, 
+    { name: "含有一个量词命题的否定", max: 1 }, 
+    { name: "充分必要性的判断（数学文化题）", max: 1 }, 
+    { name: "交集运算", max: 1 }, 
+    { name: "求真子集个数", max: 1 }, 
+    { name: "由集合混合运算求集合", max: 1 }, 
+    { name: "集合的实际应用", max: 1 }, 
+    { name: "集合与含有一个量词的命题的综合", max: 1 }, 
+    { name: "与含有一个量词命题有关的新定义题", max: 1 }, 
+    { name: "由集合相等求参", max: 1 }, 
+    { name: "由集合元素个数求参", max: 1 }, 
+    { name: "由无限集交集为空集求参", max: 1 }, 
+    { name: "由充分不必要性求参", max: 1 }, 
+    { name: "由有限集间的运算求参", max: 1 }, 
+    { name: "与分式不等式有关的集合运算", max: 1 }, 
+    { name: "由集合的整数元素个数求参", max: 1 }
+],
+splitLine: {
+show: true,
+lineStyle: {
+width: 1,
+color: '#999'
+}
+},
+name: {
+textStyle: {
+color: "#4f4f4f"
+}
+}
+},
+series: [
+    {
+    name: "知识点掌握",
+    type: 'radar',
+    symbol: 'circle',
+    symbolSize: 6,
+    data: [
+        {
+        value: [1,0.98,1,1,1,0.92,0,1,0.1,0.67,0.56,0.81,0.81,0.8,0.51,0.51],
+        name: "样本",
+        itemStyle: {
+        normal: {
+        color: "#5470c6"
+        }
+        },
+        areaStyle: {
+        normal: {
+        width: 1,
+        opacity: 0.3
+        }
+        }
+        }, 
+        {
+        value: [1,1,1,1,1,1,0,1,0,1,1,1,1,1,0.5,0.5],
+        name: "个人",
+        itemStyle: {
+        normal: {
+        color: "#96ce7b"
+        }
+        },
+        areaStyle: {
+        normal: {
+        width: 1,
+        opacity: 0.3
+        }
+        }
+        }
+    ]
+    }
+]
+};

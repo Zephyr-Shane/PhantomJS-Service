@@ -1,0 +1,27 @@
+services:
+  phantomjs-service:
+    # 镜像名称，可自定义
+    image: phantomjs-service:latest
+    # 从当前目录的 Dockerfile 构建镜像
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # 容器名称
+    container_name: phantomjs-service
+    # 映射端口（左边是宿主机端口，右边是容器端口）
+    ports:
+      - "9527:9527"
+    # 如果有需要映射到宿主机的文件或目录，可启用 volumes
+    volumes:
+      - ./genImage/phantomjs/temp:/app/data/temp
+    # 保持容器运行
+    command: ["tail", "-f", "/dev/null"]
+    # 资源限制
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+    # 重启策略（自动重启容器）
+    restart: always
+

@@ -1,0 +1,65 @@
+var option = {
+legend: {
+data: [
+    "成绩", 
+    "样本均分"
+]
+},
+grid: {
+left: '5%',
+right: '5%',
+bottom: '5%',
+containLabel: true
+},
+xAxis: {
+type: 'category',
+data:  [
+    "1卷", 
+    "2卷", 
+    "3卷"
+]
+},
+yAxis: {
+name:"满分值",
+type: 'value',
+max:"150"
+},
+series:[
+    {
+    name: "成绩",
+    type: "line",
+    label: {
+    show: true, // 显示标签
+    position: "top"
+    },
+    data: [
+        82, 
+        74, 
+        82
+    ],
+    itemStyle: {
+    normal: {
+    color: "#5470c6"
+    }
+    }
+    }, 
+    {
+    name: "样本均分",
+    type: "line",
+    label: {
+    show: true, // 显示标签
+    position: "bottom"
+    },
+    data: [
+        62.88, 
+        74, 
+        63.6
+    ],
+    itemStyle: {
+    normal: {
+    color: "#96ce7b"
+    }
+    }
+    }
+]
+};
