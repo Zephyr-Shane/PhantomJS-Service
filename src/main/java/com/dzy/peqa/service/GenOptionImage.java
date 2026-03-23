@@ -69,7 +69,7 @@ public class GenOptionImage {
         //转换base64
         String imageBase64;
         imageBase64 = ImageUtils.convertImageToBase64Str(outputPath + pngName);
-        System.out.println(imageBase64);
+//        System.out.println(imageBase64);
         log.info("图片生成成功!");
         FileUtil.del(outputPath + tempPngName);
         FileUtil.del(outputPath + pngName);

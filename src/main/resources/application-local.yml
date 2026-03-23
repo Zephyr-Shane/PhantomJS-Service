@@ -2,7 +2,7 @@ server:
   port: 8801
 
 myapp:
-  bucketNameForReport: "bucketName"
+  bucketNameForReport: "dzy-oss202503"
   ossPdfPath: "pdf/report/"
   outputPath: "D:\\temp\\img\\"
   outputPdfPath: "D:\\temp\\pdf\\"
